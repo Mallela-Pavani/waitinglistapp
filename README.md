@@ -16,6 +16,7 @@ A React-based waitlist management application that allows users to register for 
 Before running this application, make sure you have the following installed:
 - Node.js (v14.0.0 or higher)
 - npm (v6.0.0 or higher)
+- Git (for deployment and version control)
 
 ## Installation
 
@@ -38,6 +39,46 @@ npm run dev
 ```
 
 The application will be available at `http://localhost:5173` (or another port if 5173 is in use).
+
+## Deployment
+
+### Deploying to Vercel
+
+1. **Prepare Your Repository**
+   - Create a GitHub account at https://github.com/signup
+   - Create a new repository on GitHub
+   - Push your code to GitHub:
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git branch -M main
+     git remote add origin <your-github-repo-url>
+     git push -u origin main
+     ```
+
+2. **Deploy with Vercel**
+   - Sign up for Vercel at https://vercel.com/signup using your GitHub account
+   - Once logged in, click "Import Project"
+   - Choose "Import Git Repository"
+   - Select your waitlist app repository
+   - Keep the default settings:
+     - Framework Preset: Vite
+     - Build Command: `npm run build`
+     - Output Directory: `dist`
+   - Click "Deploy"
+
+3. **Your App Is Live!**
+   - Vercel will provide you with a deployment URL (e.g., `https://your-app-name.vercel.app`)
+   - The app will automatically redeploy when you push changes to your GitHub repository
+
+### Environment Variables (if needed)
+If your app uses environment variables:
+1. Create a `.env` file locally
+2. Add the same variables in your Vercel project settings:
+   - Go to your project in Vercel
+   - Navigate to Settings > Environment Variables
+   - Add each variable and its value
 
 ## Testing the Application
 

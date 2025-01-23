@@ -1,6 +1,6 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-import { useWaitlist } from "../context/WaitlistContext";
+import { useWaitlist } from "../context/WaitListContext";
 
 function WaitlistingTable() {
   const { state } = useWaitlist();

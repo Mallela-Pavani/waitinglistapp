@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
-import { useWaitlist } from "../context/WaitlistContext";
+import { useWaitlist } from "../context/WaitListContext";
 
 const validInviteCodes = ["austin234", "alvin145", "karthik321"];
 
@@ -53,7 +53,11 @@ function RegistrationForm() {
       <Button variant="primary" type="submit" className="w-100">
         Join Waitlist
       </Button>
-      {message && <Alert className="mt-3">{message}</Alert>}
+      {message && (
+        <Alert variant="info" className="mt-3">
+          {message}
+        </Alert>
+      )}
     </Form>
   );
 }

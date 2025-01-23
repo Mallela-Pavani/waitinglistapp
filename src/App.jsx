@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import RegistrationPage from "./pages/RegistrationPage";
 import WaitinglistPage from "./pages/WaitinglistPage";
-import { WaitlistProvider } from "./context/WaitlistContext";
+import { WaitlistProvider } from "./context/WaitListContext";
 import LyftLogo from "./assets/lyftlogo.jpg";
 import "./styles/header.css";
 
