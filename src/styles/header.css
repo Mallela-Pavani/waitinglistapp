@@ -1,0 +1,28 @@
+.header-logo {
+  height: 40px; /* Adjust size */
+  width: auto;
+}
+
+.navbar {
+  padding: 10px 20px;
+}
+
+.nav-link {
+  margin-right: 15px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #ff00bf; /* Lyft pink */
+}
+
+.navbar-brand span {
+  font-size: 18px;
+  color: #000;
+}
+
+.navbar-brand span:hover {
+  color: #ff00bf;
+}

@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #ff00bf;
+  --secondary-color: #000000;
+  --background-color: #f3f3f3;
+  --text-color: #000000;
+  --border-radius: 8px;
+  --font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  margin: 0;
+  color: var(--text-color);
+  display: block;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e000a8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  border: 1px solid var(--secondary-color);
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  width: 100%;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.register-container {
+  padding: 20px;
+}
